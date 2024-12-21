@@ -35,7 +35,7 @@ public class Intro {
 // Example:
     //  int[] staticArray = new int[5]; // Array size is fixed at 5
    
-
+//
 
 
     public static void main(String[] args) {
