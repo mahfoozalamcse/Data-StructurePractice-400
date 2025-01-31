@@ -33,6 +33,29 @@ public class LeftRotateDPos {
                leftRotateOne(arr, n);
           }
     }
+
+    // approch 3 solution use traversal 
+    // helper reverse method
+
+    public static void reverse(int arr[], int first, int last){
+        
+
+        while (first < last) {
+            int temp = arr[first];
+                arr[first] = arr[last];
+                arr[last]  = temp;
+
+                first++;
+                last--;
+        }
+    }
+
+   // main method
+   public static void leftRotateDPos3(int arr[], int d, int n){
+        reverse(arr, 0, d-1);
+        reverse(arr, d, n-1);
+        reverse(arr, 0, n-1);
+   }
     
 
     // print array
@@ -49,8 +72,11 @@ public class LeftRotateDPos {
     //   leftRotateDPos1(arr, d, n);
     //   printArray(arr);
 
-         leftRotateDPos2(arr, d, n);
-         printArray(arr);
+        //  leftRotateDPos2(arr, d, n);
+        //  printArray(arr);
+
+        leftRotateDPos3(arr, d, n);
+        printArray(arr);
 
     }
 }
