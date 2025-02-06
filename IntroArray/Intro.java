@@ -21,7 +21,7 @@ public class Intro {
 
 // Here:
 
-// A reference to the array object is stored in the stack.
+// A reference to the array object is stored in the stack. 
 // The array object itself is allocated in the heap.
 // Memory layout for arr:
 
