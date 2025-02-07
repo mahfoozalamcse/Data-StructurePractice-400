@@ -34,7 +34,7 @@ public class LeftRotateDPos {
           }
     }
 
-    // approch 3 solution use traversal 
+    // approch 3 solution use traversal  
     // helper reverse method
 
     public static void reverse(int arr[], int first, int last){
