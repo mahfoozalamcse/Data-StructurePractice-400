@@ -1,5 +1,6 @@
 public class LeaderinArray {
     
+    
     // Leader in array Neive method O(n^2)
     public static void leader(int arr[]){
 
