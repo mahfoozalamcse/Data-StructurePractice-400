@@ -1,4 +1,5 @@
 public class FrequencyArray {
+    
 
     // print frequency in sorted array
     public static void printFrequency(int arr[]){
