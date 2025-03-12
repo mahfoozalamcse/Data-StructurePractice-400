@@ -17,7 +17,7 @@ public class Intro {
 
 // For example: 
 
-// int[] arr = new int[5];
+// int[] arr = new int[5]; 
 
 // Here:
 
