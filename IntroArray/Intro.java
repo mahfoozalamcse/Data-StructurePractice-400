@@ -1,6 +1,6 @@
 public class Intro {
 
-    // 1. Introduction to Arrays in Java
+    // 1. Introduction to Arrays in Java 
 
     // Arrays are one of the most fundamental data structures in Java.
     // They allow us to store multiple values of the same type in a single variable and access them efficiently using an index.
