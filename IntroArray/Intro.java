@@ -12,7 +12,7 @@ public class Intro {
  
 
 // Memory Representation
-// In Java, arrays are implemented as objects. The memory is allocated in the heap, 
+// In Java, arrays are implemented as objects. The memory is allocated in the heap,  
 // and a reference to the array is stored in the stack.
 
 // For example:
