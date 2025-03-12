@@ -15,7 +15,7 @@ public class Intro {
 // In Java, arrays are implemented as objects. The memory is allocated in the heap,  
 // and a reference to the array is stored in the stack.
 
-// For example:
+// For example: 
 
 // int[] arr = new int[5];
 
