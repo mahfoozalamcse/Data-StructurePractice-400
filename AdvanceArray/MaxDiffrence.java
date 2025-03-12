@@ -11,7 +11,7 @@ public class MaxDiffrence {
            maxDiff = Math.max(maxDiff, arr[j] - arr[i]); 
         }
     
-    }
+    } 
     return maxDiff;
   }
 
