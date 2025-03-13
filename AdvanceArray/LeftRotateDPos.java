@@ -3,7 +3,7 @@ public class LeftRotateDPos {
     // left rotate by d posion array time O(N) space O(d)
     public static void leftRotateDPos1(int arr[], int d, int n){
         
-        int temp[] = new int[n];
+        int temp[] = new int[n]; 
         for (int i = 0; i < d; i++) {
             temp[i] = arr[i];
         }
