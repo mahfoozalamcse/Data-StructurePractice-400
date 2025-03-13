@@ -12,7 +12,7 @@ public class MaxDiffrence {
         }
     
     } 
-    return maxDiff;
+    return maxDiff; 
   }
 
   // efficient method time O(n) use minimal element
