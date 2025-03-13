@@ -6,7 +6,7 @@ public class Intro {
     // They allow us to store multiple values of the same type in a single variable and access them efficiently using an index.
 
    
-//     Definition of Arrays ->
+//     Definition of Arrays -> 
 //    An array is a collection of elements of the same data type, stored in contiguous memory locations.
 //    Each element in the array can be accessed using its index, starting from 0. 
  
