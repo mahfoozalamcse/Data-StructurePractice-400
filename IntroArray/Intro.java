@@ -8,7 +8,7 @@ public class Intro {
    
 //     Definition of Arrays -> 
 //    An array is a collection of elements of the same data type, stored in contiguous memory locations.
-//    Each element in the array can be accessed using its index, starting from 0. 
+//    Each element in the array can be accessed using its index, starting from 0.  
  
 
 // Memory Representation
