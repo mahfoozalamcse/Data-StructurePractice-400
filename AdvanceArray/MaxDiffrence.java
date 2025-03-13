@@ -1,5 +1,5 @@
 public class MaxDiffrence {
- 
+  
     // Neive approch time O(n^2)
   public static int maxDiffrence(int arr[]){
      
