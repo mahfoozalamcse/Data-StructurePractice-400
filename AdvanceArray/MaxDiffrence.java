@@ -2,7 +2,7 @@ public class MaxDiffrence {
    
     // Neive approch time O(n^2)
   public static int maxDiffrence(int arr[]){ 
-     
+      
     int maxDiff = arr[1] - arr[0];
     for(int i=0; i<arr.length; i++){ 
         
