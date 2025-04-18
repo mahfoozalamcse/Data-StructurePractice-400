@@ -8,7 +8,7 @@ public class MaxDiffrence {
         
         for(int j=i+1; j<arr.length; j++){
              
-           maxDiff = Math.max(maxDiff, arr[j] - arr[i]); 
+           maxDiff = Math.max(maxDiff, arr[j] - arr[i]);  
         }
     
     } 
