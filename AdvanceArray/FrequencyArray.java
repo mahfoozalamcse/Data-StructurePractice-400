@@ -3,7 +3,7 @@ public class FrequencyArray {
       
   
     // print frequency in sorted array 
-    public static void printFrequency(int arr[]){ 
+    public static void printFrequency(int arr[]){   
         int freq = 1, i = 1;
         while (i < arr.length) { 
              
