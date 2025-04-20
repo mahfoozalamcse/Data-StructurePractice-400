@@ -4,7 +4,7 @@ public class LeftRotateDPos {
     public static void leftRotateDPos1(int arr[], int d, int n){
         
         int temp[] = new int[n]; 
-        for (int i = 0; i < d; i++) { 
+        for (int i = 0; i < d; i++) {  
             temp[i] = arr[i];
         }
         for(int i=d; i<n; i++){
