@@ -1,5 +1,5 @@
 public class FrequencyArray { 
-    
+     
       
   
     // print frequency in sorted array 
