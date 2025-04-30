@@ -19,16 +19,18 @@ public class practice {
     }
 
     // push at given location
-    public static void push2(int arr[],int pos, int x){
-
-       for (int i = arr.length-1; i >= 0; i--) {
-          if (pos == i) {
-            arr[i] = x;
-          }
+    public static int push2(int arr[],int pos, int x){
+       int n = arr.length;
+       for (int i = n-1; i > pos; i--) {
+        
           arr[i] = arr[i-1];
           
        }
-        
+       if (pos >= 0  && pos < n) {
+        arr[pos] = x;
+      }
+       
+       return n;
 
     }
 
@@ -53,8 +55,21 @@ public class practice {
     //  }
     // System.out.println();
 
-    // }
+     int arr[] = new int[5];
+     arr[0] = 12;
+     arr[1] = 13;
+     arr[2] = 14;
+     arr[3] = 15;
 
+     int pos = 2;
+     int x = 9;
+     System.out.println(push2(arr, pos, x));
+     
+     for (int i = 0; i < arr.length; i++) {
+        System.out.print(arr[i]+" ");
+     }
+      System.out.println();
 
-    
+}
+
 }
