@@ -34,6 +34,29 @@ public class practice {
 
     }
 
+    // delete element
+    public static int delete(int arr[], int x){
+       int n = arr.length;
+       int iTodeletion = -1;
+       // find index
+       for (int i = 0; i < n; i++) {
+           if (arr[i] == x) {
+              iTodeletion = i;
+              break;
+           }
+       }
+
+       // dopulicate with delete 
+       for(int i = iTodeletion; i<n-1; i++){
+         if (iTodeletion != -1) {
+            arr[i] = arr[i+1];
+         }
+       }
+
+       return n-1;
+        
+    }
+
     public static void main(String[] args) {
     //    int arr[] = {12, 89, 90, 9, 77};
     //    int x = 9;
@@ -55,20 +78,37 @@ public class practice {
     //  }
     // System.out.println();
 
-     int arr[] = new int[5];
-     arr[0] = 12;
-     arr[1] = 13;
-     arr[2] = 14;
-     arr[3] = 15;
+    //  int arr[] = new int[5];
+    //  arr[0] = 12;
+    //  arr[1] = 13;
+    //  arr[2] = 14;
+    //  arr[3] = 15;
 
-     int pos = 2;
-     int x = 9;
-     System.out.println(push2(arr, pos, x));
+    //  int pos = 2;
+    //  int x = 9;
+    //  System.out.println(push2(arr, pos, x));
      
-     for (int i = 0; i < arr.length; i++) {
-        System.out.print(arr[i]+" ");
-     }
-      System.out.println();
+    //  for (int i = 0; i < arr.length; i++) {
+    //     System.out.print(arr[i]+" ");
+    //  }
+    //   System.out.println();
+
+
+
+    int arr[] = new int[5];
+    arr[0] = 12;
+    arr[1] = 13;
+    arr[2] = 14;
+    arr[3] = 15;
+
+    
+    int x = 14;
+    System.out.println(delete(arr, x));
+    
+    for (int i = 0; i < arr.length; i++) {
+       System.out.print(arr[i]+" ");
+    }
+     System.out.println();
 
 }
 
