@@ -151,7 +151,7 @@ public class practice2 {
     // method 3
     public static void leftRotate3(int arr[], int d){
         int n = arr.length;
-        reverse1(arr, 0, d);
+        reverse1(arr, 0, d-1);
         reverse1(arr, d, n-1);
         reverse1(arr, 0, n-1);
     }
