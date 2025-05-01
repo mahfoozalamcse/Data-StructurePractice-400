@@ -103,23 +103,23 @@ public class practice2 {
     public static void leftRotateByD(int arr[], int d){
        int n = arr.length;
         // create space
-       int temp[] = new int[n];
+       int temp[] = new int[d];
         
        // loop d to length store temp
        
-       for (int i = d; i < n; i++) {
+       for (int i = 0; i < d; i++) {
            temp[i] = arr[i];
            
        }
-       // loop 0 to d store temp
-       for(int i=0; i<d; i++){
-           temp[d+i] = arr[i];
+       // loop d to n and store in array
+       for(int i=d; i<n; i++){
+           arr[i-d] = arr[i];
            
        }
 
        // copy
        for (int i = 0; i < temp.length; i++) {
-            arr[i] = temp[i];
+            arr[n-d+i] = temp[i];
         
     // int n = arr.length;
     // int temp[] = new int[n];
@@ -138,6 +138,33 @@ public class practice2 {
     // for (int i = 0; i < d; i++) {
     //     arr[n - d + i] = temp[i];
        }
+    }
+
+
+    // method 2
+    public static void leftRotateD(int arr[], int d){
+        for (int i = 0; i < d; i++) {
+            leftRotateByOne(arr);
+        }
+    }
+
+    // method 3
+    public static void leftRotate3(int arr[], int d){
+        int n = arr.length;
+        reverse1(arr, 0, d);
+        reverse1(arr, d, n-1);
+        reverse1(arr, 0, n-1);
+    }
+
+    // support function leftRotate3
+    public static void reverse1(int arr[], int start, int end){
+        while (start < end) {
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+            start++;
+            end--;
+        }
     }
 
     // print array
@@ -167,7 +194,14 @@ public class practice2 {
     // leftRotateByOne(arr);
     // print(arr);
 
-    leftRotateByD(arr, 2);
+    // leftRotateByD(arr, 2);
+    // print(arr);
+
+    // leftRotateD(arr, 3);
+    // print(arr);
+
+    System.out.println();
+    leftRotate3(arr, 3);
     print(arr);
     
   }
