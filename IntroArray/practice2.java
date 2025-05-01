@@ -90,6 +90,56 @@ public class practice2 {
         return res;
     }
 
+    // left rotate by one
+    public static void leftRotateByOne(int arr[]){
+        int temp = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            arr[i-1] = arr[i];
+        }
+        arr[arr.length-1] = temp;
+    }
+
+    // left rotate by D nive approach
+    public static void leftRotateByD(int arr[], int d){
+       int n = arr.length;
+        // create space
+       int temp[] = new int[n];
+        
+       // loop d to length store temp
+       
+       for (int i = d; i < n; i++) {
+           temp[i] = arr[i];
+           
+       }
+       // loop 0 to d store temp
+       for(int i=0; i<d; i++){
+           temp[d+i] = arr[i];
+           
+       }
+
+       // copy
+       for (int i = 0; i < temp.length; i++) {
+            arr[i] = temp[i];
+        
+    // int n = arr.length;
+    // int temp[] = new int[n];
+
+    // // Copy the first d elements to temp
+    // for (int i = 0; i < d; i++) {
+    //     temp[i] = arr[i];
+    // }
+
+    // // Shift the remaining elements of arr to the left
+    // for (int i = d; i < n; i++) {
+    //     arr[i - d] = arr[i];
+    // }
+
+    // // Copy the first d elements from temp to the end of arr
+    // for (int i = 0; i < d; i++) {
+    //     arr[n - d + i] = temp[i];
+       }
+    }
+
     // print array
     public static void print(int arr[]){
         for (int i = 0; i < arr.length; i++) {
@@ -97,6 +147,8 @@ public class practice2 {
         }
         System.out.println();
     }
+
+    
   public static void main(String[] args) {
     int arr[] = {78, 78, 90, 98, 99};
     // System.out.println();
@@ -108,8 +160,14 @@ public class practice2 {
 
     // reverse(arr);
     // print(arr);
-    System.out.println();
-    System.out.println(removeDuplicate(arr));
+    // System.out.println();
+    // System.out.println(removeDuplicate(arr));
+    // print(arr);
+
+    // leftRotateByOne(arr);
+    // print(arr);
+
+    leftRotateByD(arr, 2);
     print(arr);
     
   }
