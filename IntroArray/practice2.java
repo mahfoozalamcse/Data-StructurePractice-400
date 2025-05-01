@@ -167,6 +167,25 @@ public class practice2 {
         }
     }
 
+    // move zero to end
+    public static void moveZero(int arr[]){
+        int res = 0;
+        for (int i = 0; i < arr.length; i++) {
+           
+            if (arr[i] != 0) {
+                arr[res] = arr[i];
+                res++;
+            }
+        }
+
+        while (res < arr.length) {
+            arr[res] = 0;
+            res++;
+        }
+        
+        
+    }
+
     // print array
     public static void print(int arr[]){
         for (int i = 0; i < arr.length; i++) {
@@ -177,7 +196,7 @@ public class practice2 {
 
     
   public static void main(String[] args) {
-    int arr[] = {78, 78, 90, 98, 99};
+    int arr[] = {78, 0, 0, 98, 0, 9};
     // System.out.println();
     // System.out.println(largest(arr));
 
@@ -200,8 +219,11 @@ public class practice2 {
     // leftRotateD(arr, 3);
     // print(arr);
 
-    System.out.println();
-    leftRotate3(arr, 3);
+    // System.out.println();
+    // leftRotate3(arr, 3);
+    // print(arr);
+
+    moveZero(arr);
     print(arr);
     
   }
