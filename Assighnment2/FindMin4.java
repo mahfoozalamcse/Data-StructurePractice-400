@@ -6,6 +6,7 @@ public class FindMin4 {
     public static int findMin(int nums[]){
         int start = 0, end = nums.length - 1;
 
+
         while (start <= end) {
             int mid = start + (end - start) / 2;
 
@@ -20,6 +21,7 @@ public class FindMin4 {
 
         return nums[start];
     }
+    
     public static void main(String[] args) {
         
     }

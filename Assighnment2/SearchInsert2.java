@@ -4,6 +4,7 @@ package Assighnment2;
 public class SearchInsert2 {
 
     public static int searchInsert(int[] nums, int target) {
+        
         int left = 0;
         int right = nums.length - 1;
         while (left <= right) {
