@@ -50,6 +50,7 @@ public class FisrtlastIdx1 {
     // iterative approch to find first index
     public static int firstIndex2(int[] nums, int target) {
         
+        
         int start = 0;
         int end = nums.length - 1;
 
