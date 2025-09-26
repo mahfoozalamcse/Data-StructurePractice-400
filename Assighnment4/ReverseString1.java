@@ -13,11 +13,13 @@ public class ReverseString1 {
 
             start++;
             end--;
+
         }
     }
 
     public static void main(String[] args) {
         ReverseString1 reverseString1 = new ReverseString1();
+        
         char[] s = {'h', 'e', 'l', 'l', 'o'};
         reverseString1.reverseString(s);
         System.out.println(s); // Output: "olleh"
