@@ -53,10 +53,11 @@ public class ReadBinaryWatch3 {
             }
         }  
     }
-    public static void main(String[] args) {
+    public static void main(String [] args){
         int turnedOn = 1;
         
         System.out.println(" Result : "+ binaryWatch(turnedOn));
         System.out.println(" Result 2 : "+ binaryWatch2(turnedOn));
     }
+
 }
