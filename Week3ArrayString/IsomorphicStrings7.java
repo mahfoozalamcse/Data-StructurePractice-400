@@ -39,6 +39,9 @@ public class IsomorphicStrings7 {
 
         return true; // All map consistantaly
     }
+    public static void isIsomorphic2(){
+        
+    }
     public static void main(String[] args) {
         System.out.println(isIsomorphic("egg", "add")); // true
         System.out.println(isIsomorphic("foo", "bar")); // false

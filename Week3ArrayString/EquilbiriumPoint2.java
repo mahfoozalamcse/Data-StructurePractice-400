@@ -47,8 +47,10 @@ public class EquilbiriumPoint2 {
 
     // approach 3
     public static int equlibirium3(int arr[]){
+
         int n = arr.length;
         int totalSum = 0;
+
 
         for(int num : arr){
             totalSum += num;
@@ -68,6 +70,7 @@ public class EquilbiriumPoint2 {
         return -1;
     }
     public static void main(String[] args) {
+        
         int arr[] = {-7, 1, 5, 2, -4, 3, 0};
         System.out.println(" Equilibirium : " + equlibirium1(arr));
         System.out.println(" Equilibirium : " + equlibirium1(arr));
