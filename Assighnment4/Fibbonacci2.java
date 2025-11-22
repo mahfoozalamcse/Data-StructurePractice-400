@@ -2,6 +2,7 @@ package Assighnment4;
 // Leetcode 509. Fibonacci Number
 
 public class Fibbonacci2 {
+    
     public int fib(int n) {
         if (n == 0 || n == 1) {
             return n;
