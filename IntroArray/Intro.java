@@ -27,6 +27,7 @@ public class Intro {
 
 // Index:   0   1   2   3   4
 // Values: [0] [0] [0] [0] [0]  (default values for integers)
+    
 
 // Static vs. Dynamic Arrays
 // Static Arrays:
