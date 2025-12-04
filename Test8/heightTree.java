@@ -17,6 +17,7 @@ public class heightTree {
     public static int height(Node root) {
      if (root == null) {
         return -1; // base case: empty tree has height -1
+         
     }
 
     int leftHeight = height(root.left);
