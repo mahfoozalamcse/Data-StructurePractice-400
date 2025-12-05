@@ -16,6 +16,7 @@ public class PrintNto1withoutloop5 {
         System.out.print(N+" ");
         printNos(N-1);
     }
+    
     public static void main(String[] args) {
        int n = 10;
        printNos(n);
