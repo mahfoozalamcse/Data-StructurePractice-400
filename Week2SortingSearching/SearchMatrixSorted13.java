@@ -18,10 +18,12 @@ public class SearchMatrixSorted13 {
      int cols = matrix[0].length;
 
      int row=0;
+    
      int col = cols-1;
 
      while (row < rows && col >= 0) {
         int current = matrix[row][col];
+       
 
         if (current == target) {
             return true;
