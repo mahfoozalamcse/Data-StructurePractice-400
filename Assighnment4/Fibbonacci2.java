@@ -9,7 +9,6 @@ public class Fibbonacci2 {
         }
  
         return fib(n - 1) + fib(n - 2);
-        
     }
     public static void main(String[] args) {
         Fibbonacci2 fibbonacci2 = new Fibbonacci2();
