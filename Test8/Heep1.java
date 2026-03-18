@@ -15,6 +15,7 @@ public class Heep1 {
             if (type == 1) {
                 int val = sc.nextInt();
                 pq.add(val);
+                 
             } else if (type == 2) {
                 int val = sc.nextInt();
                 pq.remove(val); // removes specific element (O(n))
