@@ -11,7 +11,6 @@ public class IterativeSearchRotated {
             if (nums[mid] == target) {
                 return mid; // found
             }
-
             // Check if left half is sorted
             if (nums[start] <= nums[mid]) {
                 // Target lies in left half?
