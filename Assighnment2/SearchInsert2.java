@@ -17,6 +17,7 @@ public class SearchInsert2 {
             } else {
                 right = mid - 1;
             }
+            
         }
         return left;
     }
